@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pull 50 person demo</title>
+  <style>
+    #container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="appid">
+    <label for="appid-text">appId</label>
+    <input type="text" name="appid-text" id="appid-text">
+  </div>
+  <div class="token">
+    <label for="token-text">token</label>
+    <input type="text" name="token-text" id="token-text">
+  </div>
+  <button id="start-btn">start pull</button>
+  <button id="stop-btn">stop pull</button>
+  <div id="container"></div>
+  <script src="./receiver.js"></script>
+  <script src="./node_modules/agora-rtc-sdk/AgoraRTCSDK.min.js"></script>
+</body>
+</html>

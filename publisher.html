@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>push 50 person demo</title>
+</head>
+<body>
+  <div class="appid">
+    <label for="appid-text">appId</label>
+    <input type="text" name="appid-text" id="appid-text" value="">
+  </div>
+  <div class="channel">
+    <label for="channel-text">channel</label>
+    <select type="text" name="channel-text" id="channel-text" required>
+      <option value="test00">test00</option>
+      <option value="test01">test01</option>
+      <option value="test02">test02</option>
+      <option value="test03">test03</option>
+  </select>
+  </div>
+  <div class="token">
+    <label for="token-text">token</label>
+    <input type="text" name="token-text" id="token-text">
+  </div>
+  <button id="start-btn">start push</button>
+  <div id="container">
+    <div id="local-player" style="width: 160px; height: 120px;"></div>
+  </div>
+  <script src="./publisher.js"></script>
+  <script src="./node_modules/agora-rtc-sdk/AgoraRTCSDK.min.js"></script>
+</body>
+</html>
